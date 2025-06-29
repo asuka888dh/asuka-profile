@@ -1,91 +1,106 @@
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
     color: #333;
-    background-color: #F9FAFC;
-    line-height: 1.8;
+    background-color: #ffffff;
+    line-height: 2;
 }
 
-header {
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.hero {
     text-align: center;
-    padding: 10vh 5%;
-    background-color: #E8F1F8;
+    margin-bottom: 4rem;
 }
 
-.hero .profile {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.profile-img {
+    width: 160px;
+    height: 160px;
     object-fit: cover;
-    margin-bottom: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #2978B5;
     margin-bottom: 0.5rem;
 }
 
-.hero p {
-    font-size: 1rem;
+.tagline {
+    font-size: 1.1rem;
     color: #4A4A4A;
 }
 
-.section {
-    padding: 8vh 10%;
-    max-width: 800px;
-    margin: 0 auto;
+.intro {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 4rem;
+}
+
+.services, .profile, .contact {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2C7DA0;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.section h2 {
-    font-size: 1.5rem;
-    color: #2C7DA0;
-    margin-bottom: 1.2rem;
-}
-
-.section ul {
+.services ul {
     list-style: none;
-    padding: 0;
-    margin: 0 auto;
+    padding-left: 0;
     text-align: left;
-    display: inline-block;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.section ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.2em;
+.services li {
+    margin-bottom: 0.8rem;
     position: relative;
+    padding-left: 1.4em;
 }
 
-.section ul li::before {
+.services li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #2978B5;
+    font-size: 1.2rem;
+    top: 0;
 }
 
-.contact p {
-    margin-bottom: 1rem;
+.profile p, .contact p {
+    text-align: center;
+    font-size: 1.05rem;
 }
 
-.cta-button {
-    padding: 0.8rem 1.5rem;
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    margin-top: 1rem;
     background-color: #2978B5;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 footer {
-    background-color: #E3EAF2;
     text-align: center;
     padding: 2rem 0;
+    background-color: #F1F5F9;
     font-size: 0.9rem;
-    color: #666;
+    color: #777;
 }
