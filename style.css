@@ -1,106 +1,121 @@
- {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Serif JP', serif;
-    color: #333;
-    background-color: #ffffff;
-    line-height: 2;
+  font-family: 'Noto Serif JP', serif;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 2;
 }
 
 main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 60px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
-.hero {
-    text-align: center;
-    margin-bottom: 4rem;
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  flex-wrap: wrap;
 }
 
-.profile-img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
+.image-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
 }
 
-.hero h1 {
-    font-size: 2.2rem;
-    color: #2978B5;
-    margin-bottom: 0.5rem;
+.square-bg {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 160px;
+  height: 160px;
+  background-color: #E3EAF2;
+  z-index: 0;
 }
 
-.tagline {
-    font-size: 1.1rem;
-    color: #4A4A4A;
+.image-wrapper img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
 }
 
-.intro {
-    text-align: center;
-    font-size: 1.05rem;
-    color: #444;
-    margin-bottom: 4rem;
+.text-wrapper h1 {
+  font-size: 1.8rem;
+  color: #2978B5;
+  margin-bottom: 0.5rem;
+}
+
+.text-wrapper p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
 }
 
 .services, .profile, .contact {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #2C7DA0;
-    margin-bottom: 1rem;
-    text-align: center;
+  font-size: 1.5rem;
+  color: #2C7DA0;
+  margin-bottom: 1rem;
 }
 
 .services ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .services li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 1.4em;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.4em;
 }
 
 .services li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #2978B5;
-    font-size: 1.2rem;
-    top: 0;
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2978B5;
+  font-size: 1.2rem;
+  top: 0;
 }
 
 .profile p, .contact p {
-    text-align: center;
-    font-size: 1.05rem;
+  text-align: center;
+  font-size: 1.05rem;
 }
 
 .button {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    margin-top: 1rem;
-    background-color: #2978B5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1rem;
+  background-color: #2978B5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 footer {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: #F1F5F9;
-    font-size: 0.9rem;
-    color: #777;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #F1F5F9;
+  font-size: 0.9rem;
+  color: #777;
 }
