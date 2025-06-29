@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    background-color: #F9FAFC;
+    line-height: 1.8;
+}
+
+header {
+    text-align: center;
+    padding: 10vh 5%;
+    background-color: #E8F1F8;
+}
+
+.hero .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #2978B5;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #4A4A4A;
+}
+
+.section {
+    padding: 8vh 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: #2C7DA0;
+    margin-bottom: 1.2rem;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2978B5;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #2978B5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #E3EAF2;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
